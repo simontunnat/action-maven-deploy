@@ -1,0 +1,28 @@
+{
+  "name": "action-maven-deploy",
+  "version": "1.0.0",
+  "description": "GitHub Action for deploying to a Maven repository.",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "ncc build src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simontunnat/action-maven-deploy.git"
+  },
+  "keywords": [],
+  "author": "Simon Tunnat",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/simontunnat/action-maven-deploy/issues"
+  },
+  "homepage": "https://github.com/simontunnat/action-maven-deploy#readme",
+  "devDependencies": {
+    "@zeit/ncc": "^0.21.0"
+  },
+  "dependencies": {
+    "@actions/core": "^1.2.2",
+    "@actions/exec": "^1.0.3"
+  }
+}

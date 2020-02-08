@@ -1,0 +1,26 @@
+name: 'action-maven-deploy'
+description: 'Deploy to a Maven repository'
+author: 'Simon Tunnat'
+inputs:
+  username:
+    description: 'Username that should be used to connect to the repository'
+    required: true
+  password:
+    description: 'Password that should be used to connect to the repository'
+    required: true
+  repository:
+    description: 'Repository that should be deployed to'
+    required: true
+  maven-goals:
+    description: 'The Maven goals to be executed'
+    required: false
+    default: 'clean deploy'
+  maven-args:
+    description: 'Additional Maven command line arguments'
+    required: false
+runs:
+  using: node12
+  main: dist/index.js
+branding:
+  icon: upload-cloud
+  color: orange
