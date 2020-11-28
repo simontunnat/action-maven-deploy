@@ -22,7 +22,7 @@ Additional Maven command line arguments.
 ### Bintray
 ```yaml
 - name: Deploy to Bintray
-  uses: simontunnat/action-maven-deploy@v1
+  uses: simontunnat/action-maven-deploy@v1.1
   with:
     username: simontunnat
     password: SECRET_API_KEY
